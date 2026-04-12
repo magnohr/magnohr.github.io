@@ -1,42 +1,116 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
-  <title>Magno Dev</title>
   <meta charset="UTF-8">
+  <title>Magno Dev</title>
+
+  <style>
+    body {
+      margin: 0;
+      background: #0f172a;
+      color: white;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      padding: 30px;
+      text-align: center;
+      background: #020617;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 40px;
+    }
+
+    .container {
+      padding: 20px;
+    }
+
+    .section-title {
+      margin-top: 40px;
+      font-size: 24px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .card {
+      background: #1e293b;
+      padding: 20px;
+      border-radius: 12px;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      background: #334155;
+    }
+
+    .card a {
+      text-decoration: none;
+      color: #38bdf8;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #020617;
+      margin-top: 40px;
+    }
+  </style>
 </head>
 
-<body style="background-color:#121212; color:white; text-align:center; font-family:Arial;">
+<body>
 
+<header>
   <h1>👨‍💻 Magno Henrique</h1>
   <p>Desenvolvedor Flutter & Java</p>
+</header>
 
-  <h2>📱 App Publicado</h2>
-  <p>
-    <a href="https://play.google.com/store/apps/details?id=com.magno.taskbook&hl=pt_BR" style="color:#00ffcc;">
-      TaskBook - App de tarefas (Play Store)
-    </a>
-  </p>
+<div class="container">
 
-  <h2>🚀 Meus Projetos</h2>
+  <div class="section-title">📱 App Publicado</div>
+  <div class="grid">
+    <div class="card">
+      <p>TaskBook - App de tarefas</p>
+      <a href="https://play.google.com/store/apps/details?id=com.magno.taskbook&hl=pt_BR">
+        Ver na Play Store
+      </a>
+    </div>
+  </div>
 
-  <p><a href="https://github.com/magnohr/previs-o_de_tempo_temp" style="color:#00ffcc;">🌦️ App de Clima</a></p>
-  <p><a href="https://github.com/magnohr/To_Do_ListFlutter" style="color:#00ffcc;">📝 To Do List Flutter</a></p>
-  <p><a href="https://github.com/magnohr/AppDatingLiteLove" style="color:#00ffcc;">❤️ App de Relacionamento</a></p>
-  <p><a href="https://github.com/magnohr/AppDeReceitas" style="color:#00ffcc;">🍔 App de Receitas (Java)</a></p>
-  <p><a href="https://github.com/magnohr/OganizzeClone" style="color:#00ffcc;">💰 App Financeiro</a></p>
-  <p><a href="https://github.com/magnohr/app_marimba_flutter_iniciante" style="color:#00ffcc;">🎵 App Marimba</a></p>
-  <p><a href="https://github.com/magnohr/Jogo_da_forca" style="color:#00ffcc;">🎮 Jogo da Forca</a></p>
-  <p><a href="https://github.com/magnohr/app_PoupaMais_flutter" style="color:#00ffcc;">📊 App Financeiro (Em andamento)</a></p>
-  <p><a href="https://github.com/magnohr/ProjetoSimplesPokemon" style="color:#00ffcc;">⚡ App Pokémon</a></p>
-  <p><a href="https://github.com/magnohr/-lcooOuGasolina" style="color:#00ffcc;">⛽ Álcool ou Gasolina</a></p>
-  <p><a href="https://github.com/magnohr/PedraPapelSpock" style="color:#00ffcc;">✊ Pedra Papel Spock</a></p>
-  <p><a href="https://github.com/magnohr/projetoLogim" style="color:#00ffcc;">🔐 Login Java</a></p>
+  <div class="section-title">🚀 Projetos</div>
+  <div class="grid">
 
-  <h2>🧠 Habilidades</h2>
-  <p>Flutter • Java • Firebase • APIs • UI/UX • GitHub</p>
+    <div class="card"><a href="https://github.com/magnohr/previs-o_de_tempo_temp">🌦️ App de Clima</a></div>
+    <div class="card"><a href="https://github.com/magnohr/To_Do_ListFlutter">📝 To Do List</a></div>
+    <div class="card"><a href="https://github.com/magnohr/AppDatingLiteLove">❤️ App Dating</a></div>
+    <div class="card"><a href="https://github.com/magnohr/AppDeReceitas">🍔 Receitas Java</a></div>
+    <div class="card"><a href="https://github.com/magnohr/OganizzeClone">💰 Financeiro</a></div>
+    <div class="card"><a href="https://github.com/magnohr/app_marimba_flutter_iniciante">🎵 Marimba</a></div>
+    <div class="card"><a href="https://github.com/magnohr/Jogo_da_forca">🎮 Jogo da Forca</a></div>
+    <div class="card"><a href="https://github.com/magnohr/app_PoupaMais_flutter">📊 PoupaMais</a></div>
+    <div class="card"><a href="https://github.com/magnohr/ProjetoSimplesPokemon">⚡ Pokémon</a></div>
+    <div class="card"><a href="https://github.com/magnohr/-lcooOuGasolina">⛽ Álcool ou Gasolina</a></div>
+    <div class="card"><a href="https://github.com/magnohr/PedraPapelSpock">✊ Pedra Papel Spock</a></div>
+    <div class="card"><a href="https://github.com/magnohr/projetoLogim">🔐 Login Java</a></div>
 
-  <h2>📩 Contato</h2>
-  <p>Email: magnohenriquereis@gmail.com</p>
+  </div>
+
+  <div class="section-title">🧠 Habilidades</div>
+  <p>Flutter • Java • Firebase • APIs • GitHub • UI/UX</p>
+
+</div>
+
+<footer>
+  <p>📩 magnohenriquereis@gmail.com</p>
+</footer>
 
 </body>
 </html>

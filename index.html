@@ -1,115 +1,183 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <title>Magno Dev</title>
+<meta charset="UTF-8">
+<title>Magno Dev</title>
 
-  <style>
-    body {
-      margin: 0;
-      background: #0f172a;
-      color: white;
-      font-family: Arial, sans-serif;
-    }
+<style>
+body {
+  margin: 0;
+  background: #0f172a;
+  color: white;
+  font-family: Arial, sans-serif;
+}
 
-    header {
-      padding: 30px;
-      text-align: center;
-      background: #020617;
-    }
+/* HEADER */
+header {
+  padding: 40px 20px;
+  text-align: center;
+  background: #020617;
+}
 
-    h1 {
-      margin: 0;
-      font-size: 40px;
-    }
+h1 {
+  margin: 0;
+  font-size: 42px;
+}
 
-    .container {
-      padding: 20px;
-    }
+header p {
+  margin: 10px 0;
+  color: #94a3b8;
+}
 
-    .section-title {
-      margin-top: 40px;
-      font-size: 24px;
-    }
+/* CONTAINER */
+.container {
+  padding: 20px;
+}
 
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-      margin-top: 20px;
-    }
+/* TITULOS */
+.section-title {
+  margin-top: 50px;
+  font-size: 26px;
+  border-left: 4px solid #38bdf8;
+  padding-left: 10px;
+}
 
-    .card {
-      background: #1e293b;
-      padding: 20px;
-      border-radius: 12px;
-      transition: 0.3s;
-    }
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
 
-    .card:hover {
-      transform: scale(1.05);
-      background: #334155;
-    }
+/* CARDS */
+.card {
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 15px;
+  transition: 0.3s;
+}
 
-    .card a {
-      text-decoration: none;
-      color: #38bdf8;
-      font-weight: bold;
-    }
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+}
 
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #020617;
-      margin-top: 40px;
-    }
-  </style>
+/* LINKS */
+.card a {
+  text-decoration: none;
+  color: #38bdf8;
+  font-weight: bold;
+}
+
+/* BOTÃO */
+.btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 15px;
+  background: #38bdf8;
+  color: black;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 30px;
+  background: #020617;
+  margin-top: 50px;
+}
+</style>
 </head>
 
 <body>
 
 <header>
   <h1>👨‍💻 Magno Henrique</h1>
-  <p>Desenvolvedor Flutter & Java</p>
+  <p>Desenvolvedor Mobile (Flutter & Java)</p>
+  <p>Crio aplicativos funcionais com integração de APIs e monetização com AdMob 🚀</p>
 </header>
 
 <div class="container">
 
+  <!-- APP PUBLICADO -->
   <div class="section-title">📱 App Publicado</div>
   <div class="grid">
     <div class="card">
-      <p>TaskBook - App de tarefas</p>
-      <a href="https://play.google.com/store/apps/details?id=com.magno.taskbook&hl=pt_BR">
+      <h3>TaskBook</h3>
+      <p>Aplicativo de gerenciamento de tarefas com foco em produtividade.</p>
+      <a class="btn" href="https://play.google.com/store/apps/details?id=com.magno.taskbook">
         Ver na Play Store
       </a>
     </div>
   </div>
 
+  <!-- PROJETOS -->
   <div class="section-title">🚀 Projetos</div>
   <div class="grid">
 
-    <div class="card"><a href="https://github.com/magnohr/previs-o_de_tempo_temp">🌦️ App de Clima</a></div>
-    <div class="card"><a href="https://github.com/magnohr/To_Do_ListFlutter">📝 To Do List</a></div>
-    <div class="card"><a href="https://github.com/magnohr/AppDatingLiteLove">❤️ App Dating</a></div>
-    <div class="card"><a href="https://github.com/magnohr/AppDeReceitas">🍔 Receitas Java</a></div>
-    <div class="card"><a href="https://github.com/magnohr/OganizzeClone">💰 Financeiro</a></div>
-    <div class="card"><a href="https://github.com/magnohr/app_marimba_flutter_iniciante">🎵 Marimba</a></div>
-    <div class="card"><a href="https://github.com/magnohr/Jogo_da_forca">🎮 Jogo da Forca</a></div>
-    <div class="card"><a href="https://github.com/magnohr/app_PoupaMais_flutter">📊 PoupaMais</a></div>
-    <div class="card"><a href="https://github.com/magnohr/ProjetoSimplesPokemon">⚡ Pokémon</a></div>
-    <div class="card"><a href="https://github.com/magnohr/-lcooOuGasolina">⛽ Álcool ou Gasolina</a></div>
-    <div class="card"><a href="https://github.com/magnohr/PedraPapelSpock">✊ Pedra Papel Spock</a></div>
-    <div class="card"><a href="https://github.com/magnohr/projetoLogim">🔐 Login Java</a></div>
+    <div class="card">
+      <h3>🌦️ App de Clima</h3>
+      <p>Consome API para mostrar previsão do tempo.</p>
+      <a href="https://github.com/magnohr/previs-o_de_tempo_temp">Ver projeto</a>
+    </div>
+
+    <div class="card">
+      <h3>📝 To Do List</h3>
+      <p>Lista de tarefas com interface simples e funcional.</p>
+      <a href="https://github.com/magnohr/To_Do_ListFlutter">Ver projeto</a>
+    </div>
+
+    <div class="card">
+      <h3>❤️ App Dating</h3>
+      <p>Interface de aplicativo estilo Tinder.</p>
+      <a href="https://github.com/magnohr/AppDatingLiteLove">Ver projeto</a>
+    </div>
+
+    <div class="card">
+      <h3>🍔 Receitas</h3>
+      <p>Aplicativo em Java com lista de receitas.</p>
+      <a href="https://github.com/magnohr/AppDeReceitas">Ver projeto</a>
+    </div>
+
+    <div class="card">
+      <h3>💰 Financeiro</h3>
+      <p>Controle de gastos inspirado no Organizze.</p>
+      <a href="https://github.com/magnohr/OganizzeClone">Ver projeto</a>
+    </div>
+
+    <div class="card">
+      <h3>🎮 Jogo da Forca</h3>
+      <p>Jogo simples com lógica de programação.</p>
+      <a href="https://github.com/magnohr/Jogo_da_forca">Ver projeto</a>
+    </div>
 
   </div>
 
+  <!-- HABILIDADES -->
   <div class="section-title">🧠 Habilidades</div>
   <p>Flutter • Java • Firebase • APIs • GitHub • UI/UX</p>
+
+  <!-- CONTATO -->
+  <div class="section-title">📞 Contato</div>
+  <div style="text-align:center; margin-top:20px;">
+
+    <a class="btn" href="mailto:magnohenriquereis@gmail.com">
+      📩 Enviar Email
+    </a>
+
+    <a class="btn" href="https://wa.me/5534991295990">
+      💬 WhatsApp
+    </a>
+
+  </div>
 
 </div>
 
 <footer>
-  <p>📩 magnohenriquereis@gmail.com</p>
+  <p>© 2026 - Magno Henrique</p>
 </footer>
 
 </body>
